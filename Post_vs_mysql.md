@@ -36,6 +36,7 @@
     - Offers advanced constraints like `CHECK` and `EXCLUDE`.
     - Enforces data integrity more robustly than MySQL.
 
+
 12. **Community and Ecosystem**:
     - Extensive extensions ecosystem like PostGIS, TimescaleDB, and Citus for scaling and analytics.
 
