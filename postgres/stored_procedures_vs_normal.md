@@ -1,5 +1,3 @@
-
-
 ### **Advantages of stored procedures**
 
 1. **Reusable Logic:**
