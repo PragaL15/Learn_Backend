@@ -66,3 +66,12 @@ password = COALESCE(p_password, password)
 ```
 1. `p_user_type_id`: The parameter passed to the stored procedure.
 2. `user_type_id`: The current value in the database.
+
+- Null-Safe Operations: Prevents overwriting existing values with NULL unintentionally.
+
+**Mostly used in***,
+
+1. Updating only specific fields:
+`CALL manage_users('UPDATE', 101, NULL, 'NewUsername', NULL);` in this only the username gets updated the fields with null value are left unchanged. The operation to be performed is typically determined by passing a specific parameter (like op_type in our example).
+
+2. `RAISE EXCEPTION` - Throw a custom error or exception.
