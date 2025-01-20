@@ -42,6 +42,8 @@ CREATE TABLE faculty_table (
     faculty_id INT NOT NULL,                 -- Faculty ID
     faculty_name VARCHAR(255) NOT NULL,       -- Name of the faculty member
     dept INT NOT NULL,                        -- Department ID (Foreign Key to dept_table)
+    mobile_num VARCHAR(15) NOT NULL,
+    ADD CONSTRAINT chk_mobile_num_format CHECK (mobile_num ~ '^\d{10}$'); -- stroring the mobile number of the respective faculty 
     status INT DEFAULT 1,                     -- Status (e.g., 1 for active, 0 for inactive)
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Record creation timestamp
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Record last update timestamp
