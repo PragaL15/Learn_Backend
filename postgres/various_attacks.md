@@ -64,7 +64,6 @@
      - Implement session expiration and token rotation.
      - Enforce TLS/SSL for all user sessions.
 
-
 10. **Insider Threats:**
     - **Explanation:** Malicious or careless employees misuse their access to compromise the database, often bypassing external defenses.
     - **Solution:**
