@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	log.Println("Application started") // Info log
+	log.Println("Application started") 
 	log.Println("Processing request...")
 	log.Println("Task completed successfully")
 }
@@ -31,7 +31,7 @@ import (
 func main() {
 	_, err := os.Open("non_existent_file.txt")
 	if err != nil {
-		log.Println("Error:", err) // Logs error without stopping execution
+		log.Println("Error:", err) 
 	}
 }
 ```

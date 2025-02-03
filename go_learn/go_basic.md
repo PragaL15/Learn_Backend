@@ -30,7 +30,30 @@ ex:
     }
 ```
 The above performs validation.
----
+
 3. Whenever we are installing an new library from go then we should update `mod` by using `go mod tidy`.
 
-4. 
+4. Go is designed to `compile directly` into a native binary for the target OS and architecture,You can generate executables for different platforms using `GOOS (Operating System) and GOARCH (Architecture)`.
+
+5. About **serialization**
+ - What is serialization?
+  Serialization is the process of converting data (Go structs, maps, slices, etc.) into a format that can be stored or transmitted (e.g., JSON, XML, or binary).
+  - Why Do We Need Serialization?
+To send data over a network (e.g., API responses).
+To store structured data in files or databases.
+To cache data (e.g., store structs in Redis as JSON).
+ -  `Binary serialization` is faster than JSON but not human-readable.
+
+6.  Now if I need to fetch the data from the DB and need it in an API -->
+ - The query should have 
+    ```sql
+            query := "SELECT id, username, email FROM users WHERE id=$1"
+            stmt, err := db.DB.Prepare(context.Background(), "get_user", query)
+            if err != nil {
+                log.Fatal("Failed to prepare statement:", err)
+            }
+    ```
+ - We shoild not use `Select * from table_name` as it fetchs all the column but we need only few column in such cases we must use this.
+ 
+ 7. We must use the frequent hits from the DB instead we can use `store frequently accessed data in Redis`.
+ - Speeds up API response time by `avoiding DB hits`.
