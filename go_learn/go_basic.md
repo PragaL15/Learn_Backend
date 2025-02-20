@@ -57,3 +57,17 @@ To cache data (e.g., store structs in Redis as JSON).
  
  7. We must use the frequent hits from the DB instead we can use `store frequently accessed data in Redis`.
  - Speeds up API response time by `avoiding DB hits`.
+
+8. Go has it's own **Garbage collection**.This eliminates the need for manual memory management, reducing the likelihood of memory leaks and other bugs that can arise from manual memory management.
+9. It's dynamically typed language with the efficiency and safety of a statically typed, compiled language. 
+
+---
+**Note**: comipled lang vs interpret language
+complied lang -> It's pre compiled into machine code , The development will be slow but excecution will be faster , The compiled executable works only on the OS it was compiled for. 
+**ex: golang , c/c++** 
+Interprep lang -> interpreted language is executed line by line at runtime by an interpreter , development is faster but excecution will be faster. 
+**ex: javascript , python**
+
+---
+10. Go is not so object-oriented in the conventional sense , it has no classes but instead we've **structs**.
+11. 

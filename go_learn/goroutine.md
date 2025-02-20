@@ -18,6 +18,26 @@ A `channel` in Go is a built-in data structure that allows `safe communication` 
 - Server executes logic (e.g., fetch data, process form, interact with a database).
 - Server sends an HTTP response back to the client.
 
-5. 
+5. Golang uses the channels and mutex for synchronization.
+ - Synchronisation means that ensures if the tasks are in correct order and prevent the conflict when multiple tasks run at same time.
 
-`
+---
+**Note:** shared resources are any global variable, file or data struture that are accessed by multiple goroutines simultaneously. 
+- Without proper synchronization concurrent access to a shared resource can lead to race conditions , data corruption etc.
+--- 
+
+6. What is mutex in golang? (Mutual Exclusion Lock)
+ - It prevents the multiple goroutines from accessing a shared resouces simultaneously.
+ - ```golang
+  mu.Lock() //ensures only one Goroutine modifies counter at a time.
+  mu.Unlock() //releases the lock for others.
+  ```
+ - This way we could lock bfr modifying shared variable and unlock aftr modification.
+
+7. Real-time example for mutex?
+  - Multiple users making payments at the same time may   cause incorrect balance updates due to race conditions.
+  - Solution: A mutex ensures only one transaction updates an account balance at a time.
+
+  will be used while taking the logs from appliation incase of debugging.
+
+8. 

@@ -101,3 +101,9 @@ func main() {
 	time.Sleep(time.Second) 
 }
 ```
+## Highly important 
+
+1. Go - Multi-threading
+   Node.js - Single threaded event loop (uses async fuctns and non-blocking model to handle operations).
+2. Parellelisim is there in Golang but not in Node.js
+ 

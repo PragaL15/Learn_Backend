@@ -67,4 +67,4 @@ logger.Println("This is a custom log message")
 ```
  - Using this log storage we can retrieve the logs from past which is not possible while using the `rotation file` and  Can define timestamp format, log levels, and file information.
 
- - 
+### Use mutex for handling the multiple users conflict during scaling application.
