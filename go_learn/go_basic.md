@@ -23,7 +23,6 @@ type Request struct {
 ex:
 ```go
     validate := validator.New()
-    // Perform validation
     if err := validate.Struct(req); err != nil {
         return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
     }
