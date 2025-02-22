@@ -68,4 +68,4 @@ Interprep lang -> interpreted language is executed line by line at runtime by an
 
 ---
 10. Go is not so object-oriented in the conventional sense , it has no classes but instead we've **structs**.
-11. 
+
