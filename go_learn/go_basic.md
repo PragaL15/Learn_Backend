@@ -22,7 +22,6 @@ type Request struct {
 2. Validation is must needed to check the of data sent from frontend is correct and is in same format as out struct else it must throw an error. for that we could use a go library `github.com/go-playground/validator/v10` use `validate` in code.
 ex:
 ```go
-  // Initialize the validator
     validate := validator.New()
     // Perform validation
     if err := validate.Struct(req); err != nil {
