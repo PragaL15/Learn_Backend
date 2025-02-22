@@ -11,6 +11,7 @@ To have a solid foundation in **Go (Golang)**, you need to master both **theoret
 - Constants (`const`), Variables (`var`)
 - Type inference (`:=` operator)
 
+
 🔹 **Control Structures**
 - `if`, `else`, `switch`, `for` loops
 - `break`, `continue`, `goto`
