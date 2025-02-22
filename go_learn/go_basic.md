@@ -37,9 +37,9 @@ The above performs validation.
  - What is serialization?
   Serialization is the process of converting data (Go structs, maps, slices, etc.) into a format that can be stored or transmitted (e.g., JSON, XML, or binary).
   - Why Do We Need Serialization?
-To send data over a network (e.g., API responses).
-To store structured data in files or databases.
-To cache data (e.g., store structs in Redis as JSON).
+    To send data over a network (e.g., API responses).
+    To store structured data in files or databases.
+    To cache data (e.g., store structs in Redis as JSON).
  -  `Binary serialization` is faster than JSON but not human-readable.
 
 6.  Now if I need to fetch the data from the DB and need it in an API -->
